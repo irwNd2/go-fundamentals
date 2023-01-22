@@ -84,4 +84,40 @@ func main() {
 		fmt.Println(loopArrStr[j])
 	}
 
+	for index, value := range loopArrStr {
+		fmt.Printf("The value at index %v is %v \n", index, value)
+	}
+
+	for _, value := range loopArrStr {
+		fmt.Printf("The value is %v \n", value) // kalo cuma pengen value nya aja. Sama jga kalo pengen indexnya aja berarti value diganti _
+	}
+
+	for index := range loopArrStr {
+		fmt.Printf("The index is %v \n", index) // kalo cuma pengen value nya aja. Sama jga kalo pengen indexnya aja berarti value diganti _ atau dihapus aja karena argumen terakhir
+	}
+
+	// Booleans and Conditional
+
+	ageInt := 27
+
+	fmt.Println(ageInt < 27)
+	fmt.Println(ageInt == 27)
+	fmt.Println(ageInt > 17)
+
+	if ageInt < 27 {
+		fmt.Println("The age is less than 27")
+	} else if ageInt > 27 {
+		fmt.Println("The age is more than 27")
+	} else if ageInt == 27 {
+		fmt.Println("The age is 27")
+	}
+
+	names := []string{"irwan", "arif", "fandi", "ata", "mahfud"}
+
+	for index, value := range names {
+		if index == 1 {
+			fmt.Printf("The name at index %v is %v", index, value)
+		}
+	}
+
 }
