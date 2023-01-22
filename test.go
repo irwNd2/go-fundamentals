@@ -116,8 +116,12 @@ func main() {
 
 	for index, value := range names {
 		if index == 1 {
-			fmt.Printf("The name at index %v is %v", index, value)
+			fmt.Printf("The name at index %v is %v \n", index, value)
 		}
+	}
+
+	for _, v := range names {
+		sayHello(v) // function from scope.go. Harus dipanggil kedua filenya saat dijalankan. Ex: go run test.go scope.go
 	}
 
 }
